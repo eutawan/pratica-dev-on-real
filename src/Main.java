@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Digite o endereço ip: ");
+        System.out.print("Digite o endereço ip: ");
         String endereco = sc.nextLine();
 
         String enderecoDesfigurado = desfigurarEndereco(endereco);
@@ -12,6 +12,6 @@ public class Main {
     }
 
     public static String desfigurarEndereco(String endereco){
-        return endereco.replace(".", "[.]");
+        return endereco.replace(".", " [.] ");
     }
 }
